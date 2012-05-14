@@ -18,7 +18,7 @@ function ss()
 var x=$('#getr').val();
 var m = x.match(/(style=")(.*?)"/g);
 var str=m.toString();
-var n=str.replace("style=","");
+var n=str.replace(/(style=)/g,"");
 var na=n.replace(/,/g,"\n");
  $('#putr').val(na);
 
