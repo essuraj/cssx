@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/ez.css">
+<link href="css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery.js">
+</script>
+<script src="js/jquery-linedtextarea.js">
+</script>
+	<script>
+$(function() {
+	$(".lined").linedtextarea(
+		{selectedLine: 1}
+	);
+});
+
+function ss()
+{
+var x=$('#getr').val();
+var m = x.match(/(style=")(.*?)"/g);
+var str=m.toString();
+var n=str.replace(/,/g,"\n");
+ $('#putr').val(n);
+
+}
+</script>
+</head>
+
+<body>
+
+<div class="ez-wr">
+  <div class="ez-box"><h1>CSSEx</h1></div>
+  <!-- Module 2A -->
+  <div class="ez-wr">
+    <div class="ez-fl ez-negmr ez-50">
+      <div class="ez-box" style="background-color:#343434"><textarea class="lined" id="getr" style="height:100%;width:99%;resize: none;"></textarea></div>
+    </div>
+    <fieldset>
+      <div class="ez-box" style="background-color:gray"><textarea id="putr" style="height:100%;width:99%;resize: none;"></textarea></div>
+    </fieldset>
+  </div>
+  <div class="ez-box"><button onclick="ss()">search</button></div>
+</div>
+    </body>
+    </html>
