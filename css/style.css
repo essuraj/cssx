@@ -1,9 +1,5 @@
-ez-box
-{
-	background-color:#343434
-} 
-getr{
-	height:100%;
-	width:99%;resize: none;} 
-ez-box{background-color:gray} 
-putr{height:100%;width:99%;resize: none;} 
+#getr{height:99%;width:100%;resize: none;} 
+#putr{height:99%;width:100%;resize: none;} 
+#op{
+	display:none;
+}
