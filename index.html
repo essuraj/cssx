@@ -7,21 +7,32 @@
 <script src="js/jquery-linedtextarea.js">
 </script>
 	<script>
-$(function() {
-	$(".lined").linedtextarea(
-		{selectedLine: 1}
-	);
-});
+// $(function() {
+// 	$(".lined").linedtextarea(
+// 		{selectedLine: 1}
+// 	);
+// });
 
 function ss()
 {
 var x=$('#getr').val();
-var m = x.match(/(style=")(.*?)"/g);
-var str=m.toString();
-var n=str.replace(/(style=)/g,"{");
-var na=n.replace(/,/g,"}\n\n");
- $('#putr').val(na);
+// var m = x.match(/(style=")(.*?)"/g);
+// var str=m.toString();
+// var n=str.replace(/(style=)/g,"{");
+// var na=n.replace(/,/g,"}\n\n");
+//  $('#putr').val(na);
+var tgs=x.match(/<(.*?)>/g);
+// for(i=0;i<tgs.length;i++)
+// {
+//   if(tgs[i].matches)
+// }
+var str=tgs.toString();
 
+var naa=str.replace(/<\/(.*?)>,/g,"");
+
+alert(naa);
+var na=naa.replace(/,/g,"\n");
+$('#putr').val(na);
 }
 </script>
 </head>
