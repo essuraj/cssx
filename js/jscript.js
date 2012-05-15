@@ -9,7 +9,14 @@ function ss()
 var x=$('#getr').val();
 
 var tgs=x.match(/<(.*?)>/g);
-
+if(tgs==null)
+{
+  $( "#nop" ).dialog( "destroy" );
+    $( "#nop" ).dialog({
+      height: 110,width: 640,
+      modal: true
+    });
+}
 var str=tgs.toString();
 
 var naa=str.replace(/<\/(.*?)>,/g,"");
@@ -82,11 +89,17 @@ tgv=tgv+"";
   
 }
 $('#putr').val ("\n\n\n" + xxx);
+console.log(xxx);
+if(xxx!=null)
+{
 $( "#op" ).dialog( "destroy" );
     $( "#op" ).dialog({
       height: 480,width: 640,
       modal: true
     });
-
+}else
+{
+  
+}
 
 }

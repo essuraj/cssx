@@ -29,6 +29,9 @@ background: -webkit-linear-gradient(top, rgba(211,238,251,1) 0%,rgba(233,246,253
 #op{
 	display:none;
 }
+#nop{
+	display:none;
+}
 html{
 	background:#303030;
 }
