@@ -30,9 +30,9 @@ var str=tgs.toString();
 
 var naa=str.replace(/<\/(.*?)>,/g,"");
 
-alert(naa);
-var na=naa.replace(/,/g,"\n");
-$('#putr').val(na);
+
+// var na=naa.replace(/,/g,"\n"); //removes ,and adds new line
+$('#putr').val(naa);
 }
 </script>
 </head>
