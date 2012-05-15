@@ -24,6 +24,7 @@ background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44
 	 border-radius: 8px;
 	 padding:5px;
 	 border:2px dashed #343434;
+	 -webkit-box-shadow: 0 8px 6px -6px black;
 background: -webkit-linear-gradient(top, rgba(211,238,251,1) 0%,rgba(233,246,253,1) 6%,rgba(255,252,252,1) 49%,rgba(233,246,253,1) 95%,rgba(211,238,251,1) 100%);
 } 
 #op{
