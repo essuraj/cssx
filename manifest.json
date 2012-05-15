@@ -1,0 +1,19 @@
+{
+  "name": "CSS Extractor",
+  "description": "This Application can be used to Extract inline and Internal Css ",
+  "version": "1",
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "icons": {
+    "16": "i_16.png",
+    "64": "i_64.png",
+    "128": "i_128.png"
+      },
+  "permissions": [
+    "unlimited_storage",
+    "notifications"
+  ]
+}
