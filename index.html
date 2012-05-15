@@ -1,22 +1,39 @@
 <html>
 <head>
+  <title>CSS Style Extracter</title>
   <link rel="stylesheet" href="css/ui.css" type="text/css">
 <script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
 <script src="js/ui.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="css/ez.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+
+<!-- <link href="css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" /> -->
 <!-- <script src="js/jquery.js"></script> -->
-<script src="js/jquery-linedtextarea.js"></script>
+<!-- <script src="js/jquery-linedtextarea.js"></script> -->
+
+
+
+
+
+<!-- <script src="codemirror.js"></script>
+<script src="xml.js"></script>
+<script src="javascript.js"></script>
+<script src="css.js"></script>
+<script src="htmlmixed.js"></script>
+<link rel="stylesheet" href="lib/codemirror.css">
+<link rel="stylesheet" href="css/blackboard.css"> -->
+<!-- <link rel="stylesheet" href="doc/docs.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/ez.css"> -->
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<link rel="stylesheet" type="text/css" href="css/ez.css"> 
 <script src="js/jscript.js"></script>
+
 </head>
 <body>
 
 
-<h1>CSS Extractor</h1><button onclick="ss()">Extract</button>
+<h1>CSS Style Extractor</h1><button id= "butt" onclick="ss()">Extract</button>
 
 <div class="ez-wr">
-  <div class="ez-box"><textarea class="lined" id="getr" placeholder="Paste you html code that has the inline or internal css styles"></textarea></div> 
+  <div class="ez-box"><textarea class="lined" id="getr" name="getr" placeholder="Paste you html code that has the inline or internal css styles" style="text-align: left;background-color: white;"></textarea></div> 
 </div>
 <div id="op" title="Extracted CSS Style Sheet">
       <textarea id="putr" readonly></textarea>      
@@ -26,3 +43,4 @@
 </div>
     </body>
     </html>
+   

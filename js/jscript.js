@@ -1,13 +1,24 @@
-// $(function() {
-// 	$(".lined").linedtextarea(
-// 		{selectedLine: 1}
-// 	);
-// });
+
+// var editor = CodeMirror.fromTextArea(document.getElementById('getr'), {
+//         mode: 'text/html',
+//         tabMode: 'indent',
+        
+        
+//       });
+$(document).ready(function() {
+    $("#butt").button();
+  });
+
+
 
 function ss()
 {
-var x=$('#getr').val();
 
+ 
+ 
+
+var x=$('#getr').val();
+console.log(x);
 var tgs=x.match(/<(.*?)>/g);
 if(tgs==null)
 {
@@ -103,3 +114,6 @@ $( "#op" ).dialog( "destroy" );
 }
 
 }
+
+
+
